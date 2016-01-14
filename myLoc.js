@@ -14,7 +14,6 @@ function displayLocation(position) {//浏览器得到一个位置时就会调用
 
 	var div = document.getElementById("location");
 	div.innerHTML = "You are at Latitude: " + latitude + ", Longitude: " + longitude; 
-	alert("hh");
 }
  
 function displayError(error) { //geolocation会在确定位置失败时向这个函数传入一个error对象。其中包含一个数值码，描述了未能确定浏览器位置的原因。
