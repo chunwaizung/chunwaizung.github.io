@@ -15,6 +15,8 @@ function displayLocation(position) {//浏览器得到一个位置时就会调用
 
 	var div = document.getElementById("location");
 	div.innerHTML = "You are at Latitude: " + latitude + ", Longitude: " + longitude; 
+	div.innerHTML += "(with " + position.coords.accuracy + " meters accuracy)";//精度
+
 
 	var km = computeDistance(position.coords, ourCoords);//计算距离
 	var distance = document.getElementById("distance");
